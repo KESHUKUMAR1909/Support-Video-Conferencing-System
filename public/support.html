@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support View</title>
+  <link rel="stylesheet" href="support.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Support / Admin Dashboard</h1>
+    <input type="text" id="roomInput" placeholder="Enter Room ID" class="input-field">
+    <button id="joinBtn" class="btn">Join Room</button>
+    <div class="video-container">
+      <video id="remoteVideo" autoplay playsinline></video>
+    </div>
+  </div>
+
+  <p id="roomId"></p>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="support.js"></script>
+</body>
+</html>
