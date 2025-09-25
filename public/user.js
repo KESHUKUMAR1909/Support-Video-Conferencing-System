@@ -58,7 +58,7 @@ shareBtn.onclick = async () => {
         // Mobile autoplay fix
         localVideo.muted = true; 
         localVideo.srcObject = stream;
-        await localVideo.play();
+        // await localVideo.play();
 
         // Step 3: Setup RTCPeerConnection
         pc = new RTCPeerConnection({
